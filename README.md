@@ -1,6 +1,6 @@
 # canvas-pixels
 
-> canvas pixels
+> canvas-pixels
 
 ## Build Setup
 
