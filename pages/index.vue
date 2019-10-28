@@ -1,23 +1,23 @@
 <template>
-  <div class="container">
-    <h1>Some info here</h1>
-  </div>
+    <MainContainer>
+      <Toolbar />
+      <Canvas />
+    </MainContainer>
 </template>
 
 <script>
+    import Canvas from '~/components/Canvas/Canvas.vue'
+    import MainContainer from '~/components/MainContainer/MainContainer.vue'
+    import Toolbar from '~/components/Toolbar/Toolbar.vue'
+
 
     export default {
-        components: {}
+        components: {
+            Canvas,
+            MainContainer,
+            Toolbar
+        }
     }
 </script>
 
-<style>
-  .container {
-    margin: 0 auto;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-</style>
+<style src="../components/pages/index.css"></style>
