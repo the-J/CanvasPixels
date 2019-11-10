@@ -1,14 +1,24 @@
 require('normalize.css/normalize.css')
-require('./styles/index.scss')
 
-document.addEventListener('DOMContentLoaded', () => {
+require('./index.css')
 
-    const pluginsTriggerElement = document.getElementById('plugins-trigger')
-    const pluginsElement = document.getElementById('plugins')
+require('./menu/menu.css')
+require('./menu/menu')
 
-    const pluginsVisibleClass = 'splash-overview-plugins__list--visible'
+require('./canvas/canvas.css')
+require('./canvas/canvas')
 
-    pluginsTriggerElement.onclick = () => {
-        pluginsElement.classList.toggle(pluginsVisibleClass)
-    }
-})
+
+
+//
+// document.addEventListener('DOMContentLoaded', () => {
+//
+//     const pluginsTriggerElement = document.getElementById('plugins-trigger')
+//     const pluginsElement = document.getElementById('plugins')
+//
+//     const pluginsVisibleClass = 'splash-overview-plugins__list--visible'
+//
+//     pluginsTriggerElement.onclick = () => {
+//         pluginsElement.classList.toggle(pluginsVisibleClass)
+//     }
+// })

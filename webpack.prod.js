@@ -48,15 +48,6 @@ module.exports = {
                         options: {
                             sourceMap: true
                         }
-                    },
-                    {
-                        // compiles Sass to CSS
-                        loader: 'sass-loader',
-                        options: {
-                            outputStyle: 'expanded',
-                            sourceMap: true,
-                            sourceMapContents: true
-                        }
                     }
                 ]
             },
@@ -94,7 +85,7 @@ module.exports = {
         new CleanWebpackPlugin(buildPath),
         new FaviconsWebpackPlugin({
             // Your source logo
-            logo: './src/assets/icon.png',
+            logo: './src/static/assets/icon.png',
             // The prefix for all image files (might be a folder or a name)
             prefix: 'icons-[hash]/',
             // Generate a cache file with control hashes and
